@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>{% block title %}{% end %} | Demo</title>
+</head>
+<body>
+  {% if handler.flash.error %} 
+    {{ handler.flash.error }} 
+  {% end %}
+  
+  {% if handler.flash.message %}
+    {{ handler.flash.message }}
+  {% end %}
+  
+  {% block content %}{% end %}
+</body>
+</html>

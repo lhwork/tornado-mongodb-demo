@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div><a href='/'>Home</a></div>
+<form name="signupForm" action="/signup" method="post">
+    <input type="hidden" name="next" value="{{ next }}" />
+    <input type="text" name="email"/>
+    <input type="password" name="password"/>
+    <input type="password" name="password2"/>
+    <button type="submit">Signup</button>
+</form>
+{% end %}
+
